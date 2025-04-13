@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: blue;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('images/imageskalen-emsley-Bkci_8qcdvQ.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.btn-group {
+  margin-top: 1rem;
+}
+
+.btn-group button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn-group button:hover {
+  transform: scale(1.1);
+  background-color: darkblue;
+}
+
+section {
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 8px;
+}
+
+#videos {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: darkgreen;
+}

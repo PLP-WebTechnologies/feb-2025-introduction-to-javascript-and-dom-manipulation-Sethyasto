@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frost Mountain Climbers</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1 id="main-heading">FROST MOUNTAIN CLIMBERS</h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#videos">Videos</a> <!-- New Link -->
+      <a href="#adventure">Adventure</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Adventure Awaits</h2>
+      <p id="tagline">Your journey to the peak starts here.</p>
+      <div class="btn-group">
+        <button onclick="changeHeadline()">Change Headline</button>
+        <button onclick="addTagline()">Add Tagline</button>
+        <button onclick="removeTagline()">Remove Tagline</button>
+        <button onclick="bookAdventure()">Book Your Adventure</button>
+        <button onclick="playClickSound()">🔊 Play Sound</button> <!-- Visible Sound Button -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are passionate mountain guides committed to helping adventurers reach the summit.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/mtn1.jpg" alt="Mountain 1"/>
+      <img src="images/mtn2.jpg" alt="Mountain 2"/>
+      <img src="images/mtn3.jpg" alt="Mountain 3"/>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos">
+    <h2>Our Videos</h2>
+    <video controls width="100%" height="300">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p>Experience the thrill through our mountain adventures.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Frost Mountain Climbers | Email: <a href="mailto:frostmountain@gmail.com">frostmountain@gmail.com</a></p>
+  </footer>
+
+  <!-- Audio Element -->
+  <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
